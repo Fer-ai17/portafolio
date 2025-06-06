@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - ADSO</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img class="logo" src="assets/images/logo.png" alt="Logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#estadisticas" class="nav-link">Estadísticas</a></li>
+                    <li><a href="#equipo" class="nav-link">Equipo de Trabajo</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section con fondo animado -->
+    <section id="inicio" class="hero">
+        <canvas id="hero-canvas" class="background-canvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">| ADSO |</h1>
+                <p class="hero-subtitle">| Tecnólogo - Analisís y Desarrollo de Software |</p>
+                <button class="cta-button" onclick="scrollToSection('proyectos')">
+                    Ver Proyectos <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-nosotros" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Nuestro salón de programación es un espacio dedicado al aprendizaje y desarrollo de habilidades tecnológicas. Aquí se exploran diferentes lenguajes de programación y se crean proyectos innovadores.</p>
+                    <div class="features">
+
+                        <div class="feature">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Aprendizaje Práctico</h3>
+                            <p>Enfoque en la experiencia directa y la práctica activa con proyectos reales</p>
+                        </div>
+
+                        <div class="feature" onclick="window.location.href='https://trello.com/b/OZTu8zT4/generacion-de-constancias-para-funcionarios-planta-y-contrato'">
+                            <i class="fas fa-users"></i>
+                            <h3>Trabajo Colaborativo</h3>
+                            <p>Desarrollo de habilidades en equipo</p>
+                        </div>
+
+                        <div class="feature" onclick="scrollToProjects()">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Innovación</h3>
+                            <p>Proyectos creativos y tecnológicos</p>
+                        </div>
+
+                        <div class="feature" onclick="window.location.href='https://www.figma.com/proto/hUBX3xWZDHvfg4nk411AMQ/Carnetizaci%C3%B3n?node-id=35-44&t=HFlaAaMUjpCEdNYG-1'">
+                            <i class="fa-brands fa-figma"></i>
+                            <h3>Prototipado</h3>
+                            <p>Modelado y Maquetación de productos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Nuestros Proyectos</h2>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="kotlin">Kotlin</button>
+                <!-- <button class="filter-btn" data-filter="php">PHP</button> -->
+            </div>
+
+            <div class="projects-grid" id="projects-grid">
+
+                <!-- JavaScript Projects -->
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <i class="fab fa-js-square"></i>
+                        <img class="project-preview" src="assets/images/veterinaria.png" alt="Proyecto">
+                    </div>
+                    
+                    <div class="project-content">
+                        <a href="https://github.com/angym16/veterinaria"><i class="fab fa-github"></i></a>
+                        <h3>Citas Veterinarias</h3>
+                        <p>Gestor de citas con funciones de agregar, editar y eliminar.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag tailwind">Tailwind</span>
+                            <span class="tech-tag vite">Vite</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" data-demo-url="https://veterinaria-f0q6.onrender.com">Ver Proyecto</button>
+                            <button class="btn-code" data-manual-url="">Manuales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <i class="fab fa-js-square"></i>
+                        <img class="project-preview" src="assets/images/CRM.png" alt="Proyecto">
+                    </div>
+                    <div class="project-content">
+
+                        <a href="https://github.com/Jhodaqui/crm-frontend"><i class="fab fa-github"></i></a>
+                        <h3>CRM</h3>
+                        <p>Creación y control de clientes de una empresa.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag json">JSON-Server</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag tailwind">Tailwind</span>
+                            <span class="tech-tag vite">Vite</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" data-demo-url="https://crm-frontend-7nnx.onrender.com/">Ver Proyecto</button>        
+                            <button class="btn-code" data-manual-url="">Manuales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image" data-project-img="assets/images/Cripto.png">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="project-content">
+                        <a href="https://github.com/samusolis/criptos-react"><i class="fab fa-github"></i></a>
+                        <h3>CriptoMonedas</h3>
+                        <p>Aplicación para gestionar la criptomonedas usando una API.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag tailwind">Tailwind</span>
+                            <span class="tech-tag vite">Vite</span>
+                            <span class="tech-tag api">API</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" data-demo-url="https://dulcet-buttercream-f9e606.netlify.app/">Ver Proyecto</button>                            
+                            <button class="btn-code" data-manual-url="">Manuales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <i class="fab fa-js-square"></i>
+                        <img src="assets/images/images.jpg" alt="Proyecto">
+                    </div>
+                    <div class="project-content">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <h3>GuitarLa - REMIX</h3>
+                        <p>Tienda Virtual de Guitarras</p>
+                        <div class="project-tech">
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag tailwind">Tailwind</span>
+                            <span class="tech-tag remix">Remix</span>
+                            <span class="tech-tag postgres">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
+                            <button class="btn-code" data-manual-url="">Manuales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <i class="fab fa-js-square"></i>
+                        <img src="assets/images/images.jpg" alt="Proyecto">
+                    </div>
+                    <div class="project-content">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <h3>Lista de Chequeo Mecánico</h3>
+                        <p>Lista de chequeo para mecánicos.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag tailwind">Tailwind</span>
+                            <span class="tech-tag mongodb">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
+                            <button class="btn-code" data-manual-url="">Manuales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="javascript">
+                    <div class="project-image">
+                        <i class="fab fa-js-square"></i>
+                        <img src="assets/images/images.jpg" alt="Proyecto">
+                    </div>
+                    <div class="project-content">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <h3> MERN</h3>
+                        <p>Crear proyectos y asignación de tareas.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag js">JavaScript</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag react">React</span>
+                            <span class="tech-tag tailwind">Tailwind</span>
+                            <span class="tech-tag mongodb">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
+                            <button class="btn-code" data-manual-url="">Manuales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python Projects -->
+                <div class="project-card" data-category="python">
+                    <div class="project-image">
+                        <i class="fab fa-python"></i>
+                        <img src="assets/images/images.jpg" alt="Proyecto">
+                    </div>
+                    <div class="project-content">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <h3>Sistema de Carnetización</h3>
+                        <p>Aplicación para gestionar el sistema de carnetización de la institución.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag django">Django</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag mysql">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
+                            <button class="btn-code" data-manual-url="">Manuales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="python">
+                    <div class="project-image">
+                        <i class="fab fa-python"></i>
+                        <img src="assets/images/images.jpg" alt="Proyecto">
+                    </div>
+                    <div class="project-content">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <h3>Control de Entrada SENA</h3>
+                        <p>Aplicación para gestionar el sistema de control de entrada de la institución.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag python">Python</span>
+                            <span class="tech-tag django">Django</span>
+                            <span class="tech-tag html">HTML</span>
+                            <span class="tech-tag css">CSS</span>
+                            <span class="tech-tag mysql">MySQL</span>
+                            <span class="tech-tag bootstrap">BootStrap</span>
+                            <span class="tech-tag js">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
+                            <button class="btn-code" data-manual-url="">Manuales</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kotlin Projects -->
+                <div class="project-card" data-category="kotlin">
+                    <div class="project-image">
+                        <i class="devicon-kotlin-plain colored" style="font-size: 2rem;"></i>
+                        <img src="assets/images/images.jpg" alt="Proyecto">
+                    </div>
+                    <div class="project-content">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <h3>Indice de Masa Corporal(IMC)</h3>
+                        <p>Aplicación movil para calcular el IMC y la correspondiente categoría de nivel de peso según el IMC.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag kotlin">Kotlin</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
+                            <button class="btn-code" data-manual-url="">Manuales</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PHP Projects -->
+                <!-- <div class="project-card" data-category="php">
+                    <div class="project-image">
+                        <i class="fa-brands fa-php"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>I</h3>
+                        <p>A</p>
+                        <div class="project-tech">
+                            <span class="tech-tag kotlin">K</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn-demo" onclick="showProjectDetails('Indice de Masa Corporal', 'Esta calculadora proporciona el IMC y la correspondiente categoría de nivel de peso según el IMC.')">Ver Demo</button>
+                            <button class="btn-code">Código</button>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section con fondo animado -->
+    <section id="estadisticas" class="stats">
+        <canvas id="stats-canvas" class="background-canvas"></canvas>
+        <div class="container">
+            <h2 class="section-title">Nuestros Logros</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-target="9">0</div>
+                    <div class="stat-label">Proyectos Completados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="11">0</div>
+                    <div class="stat-label">Estudiantes Activos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Lenguajes Aprendidos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Frameworks Dominados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Bases de Datos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+     <section id="equipo" class="contact">
+        <div class="container">
+            <h2 class="section-title">Equipo de Trabajo</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contact-form">
+                    <img class="equipo-img" src="assets/images/equipo.jpg" alt="Logo">
+                </form>
+            </div>
+        </div>
+    </section> 
+      
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img class="logo" src="assets/images/logo.png" alt="Logo">
+                    <h3></h3>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <!-- <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a> -->
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
+
+
