@@ -510,6 +510,73 @@ if ("performance" in window) {
 }
 
 // =============================================
+// MODAL DE MANUALES
+// =============================================
+function showProjectDetails(title, description, tutorialUrl, manualUrl) {
+  const modal = document.getElementById("project-modal");
+  const modalTitle = document.getElementById("modal-title");
+  const modalDescription = document.getElementById("modal-description");
+  
+  modalTitle.textContent = title;
+  modalDescription.textContent = description;
+  
+  const modalActions = document.querySelector(".modal-actions");
+  modalActions.innerHTML = `
+    <button class="btn-primary" onclick="window.open('${tutorialUrl}', '_blank')">Ver Tutorial</button>
+    <button class="btn-secondary" onclick="downloadFile('${manualUrl}')">Descargar Manual</button>
+  `;
+  
+  modal.style.display = "block";
+}
+
+// Función para descarga de archivos
+function downloadFile(url) {
+  // Crear un enlace temporal
+  const link = document.createElement('a');
+  link.href = url;
+  
+  // Extraer el nombre del archivo de la URL
+  const fileName = url.split('/').pop();
+  link.download = fileName || 'manual.pdf';
+  
+  // Simular click
+  document.body.appendChild(link);
+  link.click();
+  
+  // Limpiar
+  document.body.removeChild(link);
+}
+
+  // Añadir animación
+  setTimeout(() => {
+    modal.querySelector(".modal-content").style.animation = "modalSlideIn 0.3s ease";
+  }, 10);
+
+
+// Cerrar modal
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Cerrar modal al hacer clic fuera
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+document.querySelectorAll('.btn-manual').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const title = this.getAttribute('data-title');
+    const description = this.getAttribute('data-description');
+    const tutorialUrl = this.getAttribute('data-tutorial');
+    const manualUrl = this.getAttribute('data-manual');
+    
+    showProjectDetails(title, description, tutorialUrl, manualUrl);
+  });
+});
+
+// =============================================
 // SERVICE WORKER (PARA FUTURAS FUNCIONALIDADES PWA)
 // =============================================
 if ("serviceWorker" in navigator) {
