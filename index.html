@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - ADSO</title>
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"> 
 </head>
 <body>
     <!-- Header -->
@@ -98,6 +105,7 @@
             </div>
 
             <div class="projects-grid" id="projects-grid">
+
                 <!-- JavaScript Projects -->
                 <div class="project-card" data-category="javascript">
                     <div class="project-image">
@@ -119,7 +127,7 @@
                         </div>
                         <div class="project-links">
                             <button class="btn-demo" data-demo-url="https://veterinaria-f0q6.onrender.com/">Ver Proyecto</button>
-                            <button class="btn-manual" data-title="Citas Veterinarias" data-description="Gestor de citas con funciones de agregar, editar y eliminar." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/Veterinaria.pdf">Ver Manuales</button>
+                            <button class="btn-manual" data-title="Citas Veterinarias" data-description="Gestor de citas con funciones de agregar, editar y eliminar." data-tutorial="https://youtu.be/DHFS8ZqKoU0?si=pxV57b4eOewQpiQA" data-manual="assets/manuales/Veterinaria.pdf">Ver Manuales</button>
                         </div>
                     </div>
                 </div>
@@ -246,6 +254,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Python Projects -->
                 <div class="project-card" data-category="python">
                     <div class="project-image">
@@ -294,11 +303,12 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Kotlin Projects -->
                 <div class="project-card" data-category="kotlin">
                     <div class="project-image">
                         <i class="devicon-kotlin-plain colored" style="font-size: 2rem;"></i>
-                        <img src="assets/images/images.jpg" alt="Proyecto">
+                        <img src="assets/images/IMC.jpeg" class="project-img" alt="Proyecto">
                     </div>
                     <div class="project-content">
                         <a href="#"><i class="fab fa-github"></i></a>
@@ -309,7 +319,7 @@
                         </div>
                         <div class="project-links">
                             <!-- <button class="btn-demo" data-demo-url="">Ver Proyecto</button> -->
-                            <button class="btn-manual" data-title="Indice de Masa Corporal" data-description="Aplicación movil para calcular el IMC y la correspondiente categoría de nivel de peso según el IMC." data-tutorial="https://youtu.be/2mXVd7-72hQ" data-manual="assets/manuales/">Ver Manuales</button>                        
+                            <button class="btn-manual" data-title="Indice de Masa Corporal" data-description="Aplicación movil para calcular el IMC y la correspondiente categoría de nivel de peso según el IMC." data-tutorial="https://youtu.be/2mXVd7-72hQ" data-manual="assets/manuales/IMC.pdf">Ver Manuales</button>                        
 
                         </div>
                     </div>
@@ -319,98 +329,97 @@
         </div>
     </section>
 
-<!-- Stats Section con fondo animado -->
-<section id="estadisticas" class="stats">
-    <canvas id="stats-canvas" class="background-canvas"></canvas>
-    <div class="container">
-        <h2 class="section-title">Nuestros Logros</h2>
-        <div class="stats-grid">
-            
-            <!-- Proyectos Completados -->
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-project-diagram"></i>
+    <!-- Stats Section con fondo animado -->
+    <section id="estadisticas" class="stats">
+        <canvas id="stats-canvas" class="background-canvas"></canvas>
+        <div class="container">
+            <h2 class="section-title">Nuestros Logros</h2>
+            <div class="stats-grid">
+                
+                <!-- Proyectos Completados -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-target="9">0</div>
+                    <div class="stat-label">Proyectos Completados</div>
+                    <div class="stat-details">
+                        <ul>
+                            <li>8 Aplicaciones Web</li>
+                            <li>1 Aplicación Móvil</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="stat-number" data-target="9">0</div>
-                <div class="stat-label">Proyectos Completados</div>
-                <div class="stat-details">
-                    <ul>
-                        <li>7 Aplicaciones Web</li>
-                        <li>1 Aplicación Móvil</li>
-                        <li>1 Sistema de Gestión</li>
-                    </ul>
-                </div>
-            </div>
 
-            <!-- Estudiantes Activos -->
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-users"></i>
+                <!-- Estudiantes Activos -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="11">0</div>
+                    <div class="stat-label">Estudiantes Activos</div>
+                    <!-- <div class="stat-details">
+                        <ul>
+                            <li>8 Desarrollo Web</li>
+                            <li>3 Desarrollo Móvil</li>
+                            <li>100% Satisfacción</li>
+                        </ul>
+                    </div> -->
                 </div>
-                <div class="stat-number" data-target="11">0</div>
-                <div class="stat-label">Estudiantes Activos</div>
-                <!-- <div class="stat-details">
-                    <ul>
-                        <li>8 Desarrollo Web</li>
-                        <li>3 Desarrollo Móvil</li>
-                        <li>100% Satisfacción</li>
-                    </ul>
-                </div> -->
-            </div>
 
-            <!-- Lenguajes Aprendidos -->
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-code"></i>
+                <!-- Lenguajes Aprendidos -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Lenguajes Aprendidos</div>
+                    <div class="stat-details">
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>PHP</li>
+                            <li>Kotlin</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="stat-number" data-target="4">0</div>
-                <div class="stat-label">Lenguajes Aprendidos</div>
-                <div class="stat-details">
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Python</li>
-                        <li>PHP</li>
-                        <li>Kotlin</li>
-                    </ul>
-                </div>
-            </div>
 
-            <!-- Frameworks Dominados -->
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-layer-group"></i>
+                <!-- Frameworks Dominados -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Frameworks Dominados</div>
+                    <div class="stat-details">
+                        <ul>
+                            <li>React</li>
+                            <li>Django</li>
+                            <li>Tailwind CSS</li>
+                            <li>Remix</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="stat-number" data-target="4">0</div>
-                <div class="stat-label">Frameworks Dominados</div>
-                <div class="stat-details">
-                    <ul>
-                        <li>React</li>
-                        <li>Django</li>
-                        <li>Tailwind CSS</li>
-                        <li>Remix</li>
-                    </ul>
-                </div>
-            </div>
 
-            <!-- Bases de Datos -->
-            <div class="stat-card">
-                <div class="stat-icon">
-                    <i class="fas fa-database"></i>
-                </div>
-                <div class="stat-number" data-target="4">0</div>
-                <div class="stat-label">Bases de Datos</div>
-                <div class="stat-details">
-                    <ul>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                        <li>SQLite</li>
-                    </ul>
+                <!-- Bases de Datos -->
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="stat-number" data-target="4">0</div>
+                    <div class="stat-label">Bases de Datos</div>
+                    <div class="stat-details">
+                        <ul>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>SQLite</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Team Section -->
      <section id="equipo" class="contact">
@@ -418,7 +427,7 @@
             <h2 class="section-title">Equipo de Trabajo</h2>
             <div class="contact-content">
                 <form class="contact-form" id="contact-form">
-                    <img class="equipo-img" src="assets/images/grupo.jpe" alt="Equipo de Trabajo">
+                    <img class="equipo-img" src="assets/images/grupo.jpeg" alt="Equipo de Trabajo">
                 </form>
             </div>
         </div>
@@ -447,18 +456,18 @@
     </footer>
 
 
-        <!-- Modal for Manual Details -->
-        <div id="project-modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2 id="modal-title"></h2>
-                <p id="modal-description"></p>
-                <div class="modal-actions">
-                    <button class="btn-primary">Ver Tutorial</button>
-                    <button class="btn-secondary">Descargar Manual</button>
-                </div>
+    <!-- Modal for Manual Details -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <div class="modal-actions">
+                <button class="btn-primary">Ver Tutorial</button>
+                <button class="btn-secondary">Descargar Manual</button>
             </div>
         </div>
+    </div>
 
 
     <script src="assets/scripts/script.js"></script>
