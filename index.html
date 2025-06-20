@@ -1,477 +1,478 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - ADSO</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portafolio - ADSO</title>
 
-    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
-    <link rel="manifest" href="/assets/images/site.webmanifest" />
-
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"> 
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <img class="logo" src="assets/images/logo2.png" alt="Logo">
+        <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+        <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+        <link rel="manifest" href="/assets/images/site.webmanifest" />
+        
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"> 
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="logo">
+                        <img class="logo" src="assets/images/logo2.png" alt="Logo">
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                        <li><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+                        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                        <li><a href="#estadisticas" class="nav-link">Estadísticas</a></li>
+                        <li><a href="#equipo" class="nav-link">Equipo de Trabajo</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
-                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-                    <li><a href="#estadisticas" class="nav-link">Estadísticas</a></li>
-                    <li><a href="#equipo" class="nav-link">Equipo de Trabajo</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            </nav>
+        </header>
+
+        <!-- Hero Section con fondo animado -->
+        <section id="inicio" class="hero">
+            <canvas id="hero-canvas" class="background-canvas"></canvas>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">| ADSO |</h1>
+                    <p class="hero-subtitle">| Tecnólogo - Analisís y Desarrollo de Software |</p>
+                    <button class="cta-button" onclick="scrollToSection('proyectos')">
+                        Ver Proyectos <i class="fas fa-arrow-down"></i>
+                    </button>
                 </div>
             </div>
-        </nav>
-    </header>
+        </section>
 
-    <!-- Hero Section con fondo animado -->
-    <section id="inicio" class="hero">
-        <canvas id="hero-canvas" class="background-canvas"></canvas>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">| ADSO |</h1>
-                <p class="hero-subtitle">| Tecnólogo - Analisís y Desarrollo de Software |</p>
-                <button class="cta-button" onclick="scrollToSection('proyectos')">
-                    Ver Proyectos <i class="fas fa-arrow-down"></i>
-                </button>
-            </div>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section id="sobre-nosotros" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Nuestro salón de programación es un espacio dedicado al aprendizaje y desarrollo de habilidades tecnológicas. Aquí se exploran diferentes lenguajes de programación y se crean proyectos innovadores.</p>
+                        <div class="features">
 
-    <!-- About Section -->
-    <section id="sobre-nosotros" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre Nosotros</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Nuestro salón de programación es un espacio dedicado al aprendizaje y desarrollo de habilidades tecnológicas. Aquí se exploran diferentes lenguajes de programación y se crean proyectos innovadores.</p>
-                    <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-laptop-code"></i>
+                                <h3>Aprendizaje Práctico</h3>
+                                <p>Enfoque en la experiencia directa y la práctica activa con proyectos reales</p>
+                            </div>
 
-                        <div class="feature">
-                            <i class="fas fa-laptop-code"></i>
-                            <h3>Aprendizaje Práctico</h3>
-                            <p>Enfoque en la experiencia directa y la práctica activa con proyectos reales</p>
-                        </div>
+                            <div class="feature" onclick="window.location.href='https://trello.com/b/OZTu8zT4/generacion-de-constancias-para-funcionarios-planta-y-contrato'">
+                                <i class="fas fa-users"></i>
+                                <h3>Trabajo Colaborativo</h3>
+                                <p>Desarrollo de habilidades en equipo</p>
+                            </div>
 
-                        <div class="feature" onclick="window.location.href='https://trello.com/b/OZTu8zT4/generacion-de-constancias-para-funcionarios-planta-y-contrato'">
-                            <i class="fas fa-users"></i>
-                            <h3>Trabajo Colaborativo</h3>
-                            <p>Desarrollo de habilidades en equipo</p>
-                        </div>
+                            <div class="feature" onclick="scrollToProjects()">
+                                <i class="fas fa-rocket"></i>
+                                <h3>Innovación</h3>
+                                <p>Proyectos creativos y tecnológicos</p>
+                            </div>
 
-                        <div class="feature" onclick="scrollToProjects()">
-                            <i class="fas fa-rocket"></i>
-                            <h3>Innovación</h3>
-                            <p>Proyectos creativos y tecnológicos</p>
-                        </div>
-
-                        <div class="feature" onclick="window.location.href='https://www.figma.com/proto/hUBX3xWZDHvfg4nk411AMQ/Carnetizaci%C3%B3n?node-id=35-44&t=HFlaAaMUjpCEdNYG-1'">
-                            <i class="fa-brands fa-figma"></i>
-                            <h3>Prototipado</h3>
-                            <p>Modelado y Maquetación de productos</p>
+                            <div class="feature" onclick="window.location.href='https://www.figma.com/proto/hUBX3xWZDHvfg4nk411AMQ/Carnetizaci%C3%B3n?node-id=35-44&t=HFlaAaMUjpCEdNYG-1'">
+                                <i class="fa-brands fa-figma"></i>
+                                <h3>Prototipado</h3>
+                                <p>Modelado y Maquetación de productos</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="proyectos" class="projects">
-        <div class="container">
-            <h2 class="section-title">Nuestros Proyectos</h2>
-            
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="javascript">JavaScript</button>
-                <button class="filter-btn" data-filter="python">Python</button>
-                <button class="filter-btn" data-filter="kotlin">Kotlin</button>
-                <!-- <button class="filter-btn" data-filter="php">PHP</button> -->
-            </div>
+        <!-- Projects Section -->
+        <section id="proyectos" class="projects">
+            <div class="container">
+                <h2 class="section-title">Nuestros Proyectos</h2>
+                
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="kotlin">Kotlin</button>
+                    <!-- <button class="filter-btn" data-filter="php">PHP</button> -->
+                </div>
 
-            <div class="projects-grid" id="projects-grid">
+                <div class="projects-grid" id="projects-grid">
 
-                <!-- JavaScript Projects -->
-                <div class="project-card" data-category="javascript">
-                    <div class="project-image">
-                        <i class="fab fa-js-square"></i>
-                        <img class="project-preview" src="assets/images/veterinaria.png" alt="Proyecto" class="project-img">
+                    <!-- JavaScript Projects -->
+                    <div class="project-card" data-category="javascript">
+                        <div class="project-image">
+                            <i class="fab fa-js-square"></i>
+                            <img class="project-preview" src="assets/images/veterinaria.png" alt="Proyecto" class="project-img">
+                        </div>
+                        
+                        <div class="project-content">
+                            <a href="https://github.com/angym16/veterinaria"><i class="fab fa-github"></i></a>
+                            <h3>Citas Veterinarias</h3>
+                            <p>Gestor de citas con funciones de agregar, editar y eliminar.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
+                                <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
+                                <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
+                                <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
+                                <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
+                                <span class="tech-tag vite" onclick="window.open('https://vite.dev/guide/', '_blank')">Vite</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-demo" data-demo-url="https://veterinaria-f0q6.onrender.com/">Ver Proyecto</button>
+                                <button class="btn-manual" data-title="Citas Veterinarias" data-description="Gestor de citas con funciones de agregar, editar y eliminar." data-tutorial="https://youtu.be/DHFS8ZqKoU0?si=pxV57b4eOewQpiQA" data-manual="assets/manuales/Veterinaria.pdf">Ver Manuales</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="javascript">
+                        <div class="project-image">
+                            <i class="fab fa-js-square"></i>
+                            <img class="project-preview" src="assets/images/CRM.png" alt="Proyecto">
+                        </div>
+                        <div class="project-content">
+
+                            <a href="https://github.com/Jhodaqui/crm-frontend"><i class="fab fa-github"></i></a>
+                            <h3>CRM</h3>
+                            <p>Creación y control de clientes de una empresa.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
+                                <span class="tech-tag json" onclick="window.open('https://www.geeksforgeeks.org/json-server-setup-and-introduction/', '_blank')">JSON-Server</span>
+                                <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
+                                <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
+                                <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
+                                <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
+                                <span class="tech-tag vite" onclick="window.open('https://vite.dev/guide/', '_blank')">Vite</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-demo" data-demo-url="https://crm-fronted.netlify.app/">Ver Proyecto</button>        
+                                <button class="btn-manual" data-title="CRM" data-description="Creación y control de clientes de una empresa." data-tutorial="https://youtu.be/76fB6x2L7cM" data-manual="assets/manuales/">Ver Manuales</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="javascript">
+                        <div class="project-image" data-project-img="assets/images/Cripto.png">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="project-content">
+                            <a href="https://github.com/samusolis/criptos-react"><i class="fab fa-github"></i></a>
+                            <h3>CriptoMonedas</h3>
+                            <p>Aplicación para gestionar la criptomonedas usando una API.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
+                                <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
+                                <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
+                                <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
+                                <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
+                                <span class="tech-tag vite" onclick="window.open('https://vite.dev/guide/', '_blank')">Vite</span>
+                                <span class="tech-tag api" onclick="window.open('https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces', '_blank')">API</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-demo" data-demo-url="https://dulcet-buttercream-f9e606.netlify.app/">Ver Proyecto</button>                            
+                                <button class="btn-manual" data-title="CriptoMonedas" data-description="Aplicación para gestionar la criptomonedas usando una API." data-tutorial="https://youtu.be/pC2PJi8CT0s" data-manual="assets/manuales/CRIPTOMONEDAS.pdf">Ver Manuales</button>                        
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="javascript">
+                        <div class="project-image">
+                            <i class="fab fa-js-square"></i>
+                            <img src="assets/images/Guitar.png" alt="Proyecto" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <a href="https://github.com/lishope/GuitarLA"><i class="fab fa-github"></i></a>
+                            <h3>GuitarLa - NEXT.js</h3>
+                            <p>Tienda Virtual de Guitarras</p>
+                            <div class="project-tech">
+                                <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
+                                <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
+                                <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
+                                <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
+                                <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
+                                <span class="tech-tag remix" onclick="window.open('https://remix.run/', '_blank')">Remix</span>
+                                <span class="tech-tag postgres" onclick="window.open('https://www.postgresql.org/', '_blank')">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-demo" data-demo-url="https://guitarla-0p98.onrender.com/">Ver Proyecto</button>
+                                <button class="btn-manual" data-title="GuitarLA" data-description="Tienda Virtual de Guitarras." data-tutorial="https://youtu.be/8FdI5Ek8QO0?si=GYg2SOcAD6xKV1uw" data-manual="assets/manuales/GuitarLA.pdf">Ver Manuales</button>                        
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="javascript">
+                        <div class="project-image">
+                            <i class="fab fa-js-square"></i>
+                            <img src="assets/images/terminal.png" alt="Proyecto" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <a href="https://github.com/G1lber/Proyecto-terminal"><i class="fab fa-github"></i></a>
+                            <h3>Lista de Chequeo Mecánico</h3>
+                            <p>Lista de chequeo para mecánicos.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
+                                <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
+                                <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
+                                <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
+                                <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
+                                <span class="tech-tag mongodb" onclick="window.open('https://www.mongodb.com/', '_blank')">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-demo" data-demo-url="https://proyecto-terminal-two.vercel.app">Ver Proyecto</button>
+                                <button class="btn-manual" data-title="Lista de Chequeo" data-description="Lista de chequeo para mecánicos." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/">Ver Manuales</button>                        
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="javascript">
+                        <div class="project-image">
+                            <i class="fab fa-js-square"></i>
+                            <img src="assets/images/fondoemprender.jpg" class="project-img" alt="Proyecto">
+                        </div>
+                        <div class="project-content">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <h3> MERN</h3>
+                            <p>Crear proyectos y asignación de colaboradores.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
+                                <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
+                                <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
+                                <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
+                                <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
+                                <span class="tech-tag mongodb" onclick="window.open('https://www.mongodb.com/', '_blank')">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-demo" data-demo-url="http://mern-frontend-vercel.vercel.app/">Ver Proyecto</button>
+                                <button class="btn-manual" data-title="MERN" data-description="Crear proyectos y asignación de colaboradores." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/">Ver Manuales</button>                        
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Python Projects -->
+                    <div class="project-card" data-category="python">
+                        <div class="project-image">
+                            <i class="fab fa-python"></i>
+                            <img src="assets/images/carnet.jpg" class="project-img" alt="Proyecto">
+                        </div>
+                        <div class="project-content">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <h3>Sistema de Carnetización</h3>
+                            <p>Aplicación para gestionar el sistema de carnetización de la institución.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag python" onclick="window.open('https://www.python.org/', '_blank')">Python</span>
+                                <span class="tech-tag django" onclick="window.open('https://www.djangoproject.com/', '_blank')">Django</span>
+                                <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
+                                <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
+                                <span class="tech-tag mysql" onclick="window.open('https://www.mysql.com/', '_blank')">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
+                                <button class="btn-manual" data-title="Sistema de Carnetización" data-description="Aplicación para gestionar el sistema de carnetización de la institución." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/">Ver Manuales</button>                        
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="python">
+                        <div class="project-image">
+                            <i class="fab fa-python"></i>
+                            <img src="assets/images/entrada.jpg" class="project-img" alt="Proyecto">
+                        </div>
+                        <div class="project-content">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <h3>Control de Entrada SENA</h3>
+                            <p>Aplicación para gestionar el sistema de control de entrada de la institución.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag python" onclick="window.open('https://www.python.org/', '_blank')">Python</span>
+                                <span class="tech-tag django" onclick="window.open('https://www.djangoproject.com/', '_blank')">Django</span>
+                                <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
+                                <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
+                                <span class="tech-tag mysql" onclick="window.open('https://www.mysql.com/', '_blank')">MySQL</span>
+                                <span class="tech-tag bootstrap" onclick="window.open('https://getbootstrap.com/', '_blank')">BootStrap</span>
+                                <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
+                                <button class="btn-manual" data-title="Control de Entrada SENA" data-description="Aplicación para gestionar el sistema de control de entrada de la institución." data-tutorial="https://agropecuario.net/e_gate/" data-manual="assets/manuales/">Ver Manuales</button>                        
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kotlin Projects -->
+                    <div class="project-card" data-category="kotlin">
+                        <div class="project-image">
+                            <i class="devicon-kotlin-plain colored" style="font-size: 2rem;"></i>
+                            <img src="assets/images/IMC.jpeg" class="project-img" alt="Proyecto">
+                        </div>
+                        <div class="project-content">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <h3>Indice de Masa Corporal(IMC)</h3>
+                            <p>Aplicación movil para calcular el IMC y la correspondiente categoría de nivel de peso según el IMC.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag kotlin" onclick="window.open('https://kotlinlang.org/', '_blank')">Kotlin</span>
+                            </div>
+                            <div class="project-links">
+                                <!-- <button class="btn-demo" data-demo-url="">Ver Proyecto</button> -->
+                                <button class="btn-manual" data-title="Indice de Masa Corporal" data-description="Aplicación movil para calcular el IMC y la correspondiente categoría de nivel de peso según el IMC." data-tutorial="https://youtu.be/2mXVd7-72hQ" data-manual="assets/manuales/IMC.pdf">Ver Manuales</button>                        
+
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="project-content">
-                        <a href="https://github.com/angym16/veterinaria"><i class="fab fa-github"></i></a>
-                        <h3>Citas Veterinarias</h3>
-                        <p>Gestor de citas con funciones de agregar, editar y eliminar.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
-                            <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
-                            <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
-                            <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
-                            <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
-                            <span class="tech-tag vite" onclick="window.open('https://vite.dev/guide/', '_blank')">Vite</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="btn-demo" data-demo-url="https://veterinaria-f0q6.onrender.com/">Ver Proyecto</button>
-                            <button class="btn-manual" data-title="Citas Veterinarias" data-description="Gestor de citas con funciones de agregar, editar y eliminar." data-tutorial="https://youtu.be/DHFS8ZqKoU0?si=pxV57b4eOewQpiQA" data-manual="assets/manuales/Veterinaria.pdf">Ver Manuales</button>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="project-card" data-category="javascript">
-                    <div class="project-image">
-                        <i class="fab fa-js-square"></i>
-                        <img class="project-preview" src="assets/images/CRM.png" alt="Proyecto">
-                    </div>
-                    <div class="project-content">
-
-                        <a href="https://github.com/Jhodaqui/crm-frontend"><i class="fab fa-github"></i></a>
-                        <h3>CRM</h3>
-                        <p>Creación y control de clientes de una empresa.</p>
-                        <div class="project-tech">
-                             <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
-                            <span class="tech-tag json" onclick="window.open('https://www.geeksforgeeks.org/json-server-setup-and-introduction/', '_blank')">JSON-Server</span>
-                            <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
-                            <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
-                            <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
-                            <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
-                            <span class="tech-tag vite" onclick="window.open('https://vite.dev/guide/', '_blank')">Vite</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="btn-demo" data-demo-url="https://crm-fronted.netlify.app/">Ver Proyecto</button>        
-                            <button class="btn-manual" data-title="CRM" data-description="Creación y control de clientes de una empresa." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/">Ver Manuales</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="javascript">
-                    <div class="project-image" data-project-img="assets/images/Cripto.png">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <div class="project-content">
-                        <a href="https://github.com/samusolis/criptos-react"><i class="fab fa-github"></i></a>
-                        <h3>CriptoMonedas</h3>
-                        <p>Aplicación para gestionar la criptomonedas usando una API.</p>
-                        <div class="project-tech">
-                             <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
-                            <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
-                            <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
-                            <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
-                            <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
-                            <span class="tech-tag vite" onclick="window.open('https://vite.dev/guide/', '_blank')">Vite</span>
-                            <span class="tech-tag api" onclick="window.open('https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces', '_blank')">API</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="btn-demo" data-demo-url="https://dulcet-buttercream-f9e606.netlify.app/">Ver Proyecto</button>                            
-                            <button class="btn-manual" data-title="CriptoMonedas" data-description="Aplicación para gestionar la criptomonedas usando una API." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/">Ver Manuales</button>                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="javascript">
-                    <div class="project-image">
-                        <i class="fab fa-js-square"></i>
-                        <img src="assets/images/Guitar.png" alt="Proyecto" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <a href="https://github.com/lishope/GuitarLA"><i class="fab fa-github"></i></a>
-                        <h3>GuitarLa - NEXT.js</h3>
-                        <p>Tienda Virtual de Guitarras</p>
-                        <div class="project-tech">
-                             <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
-                            <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
-                            <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
-                            <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
-                            <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
-                            <span class="tech-tag remix" onclick="window.open('https://remix.run/', '_blank')">Remix</span>
-                            <span class="tech-tag postgres" onclick="window.open('https://www.postgresql.org/', '_blank')">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="btn-demo" data-demo-url="https://guitarla-0p98.onrender.com/">Ver Proyecto</button>
-                            <button class="btn-manual" data-title="GuitarLA" data-description="Tienda Virtual de Guitarras." data-tutorial="https://youtu.be/8FdI5Ek8QO0?si=GYg2SOcAD6xKV1uw" data-manual="assets/manuales/GuitarLA.pdf">Ver Manuales</button>                        
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="javascript">
-                    <div class="project-image">
-                        <i class="fab fa-js-square"></i>
-                        <img src="assets/images/terminal.png" alt="Proyecto" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <a href="https://github.com/G1lber/Proyecto-terminal"><i class="fab fa-github"></i></a>
-                        <h3>Lista de Chequeo Mecánico</h3>
-                        <p>Lista de chequeo para mecánicos.</p>
-                        <div class="project-tech">
-                             <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
-                            <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
-                            <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
-                            <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
-                            <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
-                            <span class="tech-tag mongodb" onclick="window.open('https://www.mongodb.com/', '_blank')">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="btn-demo" data-demo-url="https://proyecto-terminal-two.vercel.app">Ver Proyecto</button>
-                            <button class="btn-manual" data-title="Lista de Chequeo" data-description="Lista de chequeo para mecánicos." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/">Ver Manuales</button>                        
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="javascript">
-                    <div class="project-image">
-                        <i class="fab fa-js-square"></i>
-                        <img src="assets/images/MERN.png" class="project-img" alt="Proyecto">
-                    </div>
-                    <div class="project-content">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <h3> MERN</h3>
-                        <p>Crear proyectos y asignación de colaboradores.</p>
-                        <div class="project-tech">
-                             <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
-                            <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
-                            <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
-                            <span class="tech-tag react" onclick="window.open('https://react.dev/learn', '_blank')">React</span>
-                            <span class="tech-tag tailwind" onclick="window.open('https://tailwindcss.com/', '_blank')">Tailwind</span>
-                            <span class="tech-tag mongodb" onclick="window.open('https://www.mongodb.com/', '_blank')">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="btn-demo" data-demo-url="https://mern-frontend-vercel.vercel.app/">Ver Proyecto</button>
-                            <button class="btn-manual" data-title="MERN" data-description="Crear proyectos y asignación de colaboradores." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/">Ver Manuales</button>                        
-
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Python Projects -->
-                <div class="project-card" data-category="python">
-                    <div class="project-image">
-                        <i class="fab fa-python"></i>
-                        <img src="assets/images/images.jpg" alt="Proyecto">
-                    </div>
-                    <div class="project-content">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <h3>Sistema de Carnetización</h3>
-                        <p>Aplicación para gestionar el sistema de carnetización de la institución.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag python" onclick="window.open('https://www.python.org/', '_blank')">Python</span>
-                            <span class="tech-tag django" onclick="window.open('https://www.djangoproject.com/', '_blank')">Django</span>
-                            <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
-                            <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
-                            <span class="tech-tag mysql" onclick="window.open('https://www.mysql.com/', '_blank')">MySQL</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
-                            <button class="btn-manual" data-title="Sistema de Carnetización" data-description="Aplicación para gestionar el sistema de carnetización de la institución." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/">Ver Manuales</button>                        
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="python">
-                    <div class="project-image">
-                        <i class="fab fa-python"></i>
-                        <img src="assets/images/images.jpg" alt="Proyecto">
-                    </div>
-                    <div class="project-content">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <h3>Control de Entrada SENA</h3>
-                        <p>Aplicación para gestionar el sistema de control de entrada de la institución.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag python" onclick="window.open('https://www.python.org/', '_blank')">Python</span>
-                            <span class="tech-tag django" onclick="window.open('https://www.djangoproject.com/', '_blank')">Django</span>
-                            <span class="tech-tag html" onclick="window.open('https://developer.mozilla.org/es/docs/Web/HTML', '_blank')">HTML</span>
-                            <span class="tech-tag css" onclick="window.open('https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content', '_blank')">CSS</span>
-                            <span class="tech-tag mysql" onclick="window.open('https://www.mysql.com/', '_blank')">MySQL</span>
-                            <span class="tech-tag bootstrap" onclick="window.open('https://getbootstrap.com/', '_blank')">BootStrap</span>
-                             <span class="tech-tag js" onclick="window.open('https://developer.mozilla.org/es/docs/Web/JavaScript', '_blank')">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="btn-demo" data-demo-url="">Ver Proyecto</button>
-                            <button class="btn-manual" data-title="Control de Entrada SENA" data-description="Aplicación para gestionar el sistema de control de entrada de la institución." data-tutorial="https://www.youtube.com/watch?v=5hSN8Hj1pJI" data-manual="assets/manuales/">Ver Manuales</button>                        
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Kotlin Projects -->
-                <div class="project-card" data-category="kotlin">
-                    <div class="project-image">
-                        <i class="devicon-kotlin-plain colored" style="font-size: 2rem;"></i>
-                        <img src="assets/images/IMC.jpeg" class="project-img" alt="Proyecto">
-                    </div>
-                    <div class="project-content">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <h3>Indice de Masa Corporal(IMC)</h3>
-                        <p>Aplicación movil para calcular el IMC y la correspondiente categoría de nivel de peso según el IMC.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag kotlin" onclick="window.open('https://kotlinlang.org/', '_blank')">Kotlin</span>
-                        </div>
-                        <div class="project-links">
-                            <!-- <button class="btn-demo" data-demo-url="">Ver Proyecto</button> -->
-                            <button class="btn-manual" data-title="Indice de Masa Corporal" data-description="Aplicación movil para calcular el IMC y la correspondiente categoría de nivel de peso según el IMC." data-tutorial="https://youtu.be/2mXVd7-72hQ" data-manual="assets/manuales/IMC.pdf">Ver Manuales</button>                        
-
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Stats Section con fondo animado -->
-    <section id="estadisticas" class="stats">
-        <canvas id="stats-canvas" class="background-canvas"></canvas>
-        <div class="container">
-            <h2 class="section-title">Nuestros Logros</h2>
-            <div class="stats-grid">
-                
-                <!-- Proyectos Completados -->
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-project-diagram"></i>
+        <!-- Stats Section con fondo animado -->
+        <section id="estadisticas" class="stats">
+            <canvas id="stats-canvas" class="background-canvas"></canvas>
+            <div class="container">
+                <h2 class="section-title">Nuestros Logros</h2>
+                <div class="stats-grid">
+                    
+                    <!-- Proyectos Completados -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-number" data-target="9">0</div>
+                        <div class="stat-label">Proyectos Completados</div>
+                        <div class="stat-details">
+                            <ul>
+                                <li>8 Aplicaciones Web</li>
+                                <li>1 Aplicación Móvil</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="stat-number" data-target="9">0</div>
-                    <div class="stat-label">Proyectos Completados</div>
-                    <div class="stat-details">
+
+                    <!-- Estudiantes Activos -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-target="11">0</div>
+                        <div class="stat-label">Estudiantes Activos</div>
+                        <!-- <div class="stat-details">
+                            <ul>
+                                <li>8 Desarrollo Web</li>
+                                <li>3 Desarrollo Móvil</li>
+                                <li>100% Satisfacción</li>
+                            </ul>
+                        </div> -->
+                    </div>
+
+                    <!-- Lenguajes Aprendidos -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Lenguajes Aprendidos</div>
+                        <div class="stat-details">
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>PHP</li>
+                                <li>Kotlin</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks Dominados -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Frameworks Dominados</div>
+                        <div class="stat-details">
+                            <ul>
+                                <li>React</li>
+                                <li>Django</li>
+                                <li>Tailwind CSS</li>
+                                <li>Remix</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Bases de Datos -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="stat-number" data-target="4">0</div>
+                        <div class="stat-label">Bases de Datos</div>
+                        <div class="stat-details">
+                            <ul>
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                                <li>MongoDB</li>
+                                <li>SQLite</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="equipo" class="contact">
+            <div class="container">
+                <h2 class="section-title">Equipo de Trabajo</h2>
+                <div class="contact-content">
+                    <form class="contact-form" id="contact-form">
+                        <img class="equipo-img" src="assets/images/grupo.jpeg" alt="Equipo de Trabajo">
+                    </form>
+                </div>
+            </div>
+        </section> 
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <img class="logo" src="assets/images/logo2.png" alt="Logo">
+                    </div>
+                    <div class="footer-section">
+                        <h4>Enlaces Rápidos</h4>
                         <ul>
-                            <li>8 Aplicaciones Web</li>
-                            <li>1 Aplicación Móvil</li>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#proyectos">Proyectos</a></li>
+                            <li><a href="#equipo">Equipo</a></li>
                         </ul>
                     </div>
                 </div>
-
-                <!-- Estudiantes Activos -->
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-number" data-target="11">0</div>
-                    <div class="stat-label">Estudiantes Activos</div>
-                    <!-- <div class="stat-details">
-                        <ul>
-                            <li>8 Desarrollo Web</li>
-                            <li>3 Desarrollo Móvil</li>
-                            <li>100% Satisfacción</li>
-                        </ul>
-                    </div> -->
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Todos los derechos reservados.</p>
                 </div>
+            </div>
+        </footer>
 
-                <!-- Lenguajes Aprendidos -->
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="stat-number" data-target="4">0</div>
-                    <div class="stat-label">Lenguajes Aprendidos</div>
-                    <div class="stat-details">
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>PHP</li>
-                            <li>Kotlin</li>
-                        </ul>
-                    </div>
-                </div>
 
-                <!-- Frameworks Dominados -->
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <div class="stat-number" data-target="4">0</div>
-                    <div class="stat-label">Frameworks Dominados</div>
-                    <div class="stat-details">
-                        <ul>
-                            <li>React</li>
-                            <li>Django</li>
-                            <li>Tailwind CSS</li>
-                            <li>Remix</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Bases de Datos -->
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <div class="stat-number" data-target="4">0</div>
-                    <div class="stat-label">Bases de Datos</div>
-                    <div class="stat-details">
-                        <ul>
-                            <li>MySQL</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                            <li>SQLite</li>
-                        </ul>
-                    </div>
+        <!-- Modal for Manual Details -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <div class="modal-actions">
+                    <button class="btn-primary">Ver Tutorial</button>
+                    <button class="btn-secondary">Descargar Manual</button>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Team Section -->
-     <section id="equipo" class="contact">
-        <div class="container">
-            <h2 class="section-title">Equipo de Trabajo</h2>
-            <div class="contact-content">
-                <form class="contact-form" id="contact-form">
-                    <img class="equipo-img" src="assets/images/grupo.jpeg" alt="Equipo de Trabajo">
-                </form>
-            </div>
-        </div>
-    </section> 
-      
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <img class="logo" src="assets/images/logo2.png" alt="Logo">
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#equipo">Equipo</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
 
 
-    <!-- Modal for Manual Details -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
-            <div class="modal-actions">
-                <button class="btn-primary">Ver Tutorial</button>
-                <button class="btn-secondary">Descargar Manual</button>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="assets/scripts/script.js"></script>
-</body>
+        <script src="assets/scripts/script.js"></script>
+    </body>
 </html>
 
 
